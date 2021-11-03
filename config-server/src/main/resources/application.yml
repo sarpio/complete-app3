@@ -1,0 +1,12 @@
+
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/sarpio/complete-app3.git
+          search-paths: /configuration
+server:
+  port: ${port:8888}
