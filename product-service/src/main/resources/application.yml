@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: product-service
+  datasource:
+    url: jdbc:h2:mem:product
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  h2:
+    console:
+      path: /h2
+      enabled: true
+server:
+  port: 8100
+springdoc:
+  swagger-ui:
+    path: /sw
